@@ -17,7 +17,7 @@ management:
   datasource:
     username: sa
     password: 1234
-    url: "jdbc:h2:file:c:/data/social-networking"
+    url: "jdbc:h2:mem:db"
     driver-class-name: org.h2.Driver
 
   h2:
