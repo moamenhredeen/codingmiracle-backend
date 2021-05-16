@@ -1,6 +1,5 @@
 package com.codingmiracle.backend.entity;
 
-import jdk.jfr.Timespan;
 import lombok.*;
 
 import javax.persistence.*;
