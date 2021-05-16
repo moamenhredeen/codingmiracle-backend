@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /social-networking/api/v1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+  datasource:
+    username: sa
+    password: 1234
+    url: "jdbc:h2:file:c:/data/social-networking"
+    driver-class-name: org.h2.Driver
+
+  h2:
+    console:
+      enabled: true
+springdoc:
+  swagger-ui:
+    path: /swagger
